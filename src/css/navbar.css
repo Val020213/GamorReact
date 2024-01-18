@@ -1,0 +1,154 @@
+/*NAVBAR*/
+.navbar-container {
+  @apply flex justify-between items-center pt-4 gap-0;
+}
+
+.navbar-container * {
+  @apply text-xl font-medium;
+}
+
+.logo-container {
+  @apply flex justify-center items-center;
+}
+
+.logo {
+  @apply text-3xl font-bold hover:animate-text-shadow-transition;
+}
+
+.menu-links-container {
+  @apply flex-row md:static md:flex md:flex-row gap-4;
+}
+
+.menu-hidden {
+  @apply hidden;
+}
+
+.menu-dropdown {
+  @apply fixed z-10 top-0 left-0 w-screen h-screen;
+}
+
+.menu-links-btn.active {
+  @apply text-primary bg-elipse bg-contain bg-no-repeat bg-center;
+}
+
+.menu-links-btn:not(.active) {
+  @apply hidden md:flex;
+}
+
+.menu-icon {
+  @apply stroke-textDef md:hidden cursor-pointer;
+}
+
+.menu-links-btn:hover {
+  @apply *:flex;
+}
+.menu-links-btn {
+  @apply items-center justify-center text-textInactive hover:text-primary p-2;
+}
+
+.menu-links-btn.active {
+  @apply text-primary bg-elipse bg-contain bg-no-repeat bg-center;
+}
+
+.pressed {
+  @apply text-primary bg-elipse bg-contain bg-no-repeat bg-center;
+}
+
+.message-container {
+  @apply flex flex-col justify-center items-center gap-4 p-4 pb-6 bg-bgTop w-3/4 md:w-1/4 z-10;
+}
+
+.message-container * {
+  @apply text-center text-xl;
+}
+
+.userSection-container {
+  @apply flex flex-row items-center gap-1;
+}
+
+.register-btn {
+  @apply bg-btnPrimary hover:animate-box-shadow-pulsate text-btnPrimaryText p-4 rounded-full dark:stroke-gray-400;
+}
+
+.login-btn {
+  @apply hover:animate-box-shadow-pulsate p-4 rounded-full;
+}
+
+.modal-container {
+  @apply flex flex-row w-3/4 lg:w-1/2 focus:outline-none animate-box-shadow-illumination bg-bgTop;
+}
+.modal-promo {
+  @apply hidden md:flex bg-primary flex-col justify-between w-full;
+}
+
+.modal-title {
+  @apply text-3xl font-bold text-center tracking-wider;
+}
+
+.modal-promo-title {
+  @apply text-white text-4xl font-bold text-center p-8 tracking-wider;
+}
+
+.modal-body {
+  @apply flex flex-col justify-between p-8 w-full;
+}
+
+.modal-input-container {
+  @apply flex flex-col justify-start gap-8;
+}
+
+.modal-input-container * {
+  @apply w-full flex flex-col items-start gap-2;
+}
+
+.modal-footer {
+  @apply flex flex-col justify-center gap-4;
+}
+
+.exit-icon {
+  @apply fixed top-2 right-4 stroke-textInactive hover:stroke-primary cursor-pointer;
+}
+
+dialog {
+  @apply absolute top-1/2 lg:-translate-y-1/2 rounded-xl shadow-xl overflow-hidden z-50;
+}
+
+.modal-container input {
+  @apply w-full pr-4 py-2.5 border-b border-gray-300 focus:outline-none focus:border-primary bg-inherit;
+}
+
+.modal-container label {
+  @apply text-xl text-textInactive;
+}
+
+.hlink {
+  @apply flex justify-end text-blue-600 text-sm hover:underline;
+}
+
+.modal-social-links {
+  @apply flex flex-row gap-4 text-center justify-center align-middle items-center text-xl;
+}
+
+.social-link {
+  @apply flex justify-center align-middle items-center bg-primary rounded-md w-full h-12 hover:ring-4 hover:ring-primary;
+}
+
+.social-icon path {
+  @apply stroke-inherit;
+}
+
+.modal-container .modal-primary-btn {
+  @apply hover:animate-box-shadow-transition text-white font-bold text-xl p-4 w-full rounded-md shadow-md bg-gradient-to-r from-primary to-secondary;
+}
+
+.logout-btn {
+  @apply flex justify-center bg-btnPrimary hover:animate-box-shadow-pulsate text-btnPrimaryText p-4 rounded-full min-w-32;
+}
+
+.theme-icon {
+  @apply hover:animate-box-shadow-illumination cursor-pointer rounded-full;
+}
+
+.theme-icon path {
+  @apply stroke-textDef;
+}

@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "navbar.css";
+@import "content.css";
+@import "trendingCategories.css";
+
+html {
+  @apply scroll-smooth md:scroll-auto;
+}
+
+body {
+  @apply bg-bgBase mx-8 lg:mx-32;
+  margin-bottom: 64px;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--text-default);
+}
+
+/* THEMES */
+@layer base {
+  :root {
+    --bg-base: theme(colors.neutral.100);
+    --bg-middle: theme(colors.neutral.200);
+    --bg-top: theme(colors.neutral.50);
+
+    --primary: theme(colors.violet.600);
+    --secondary: theme(colors.orange.400);
+
+    --text-default: theme(colors.neutral.900);
+    --text-inactive: theme(colors.neutral.500);
+
+    --btn-primary: theme(colors.black);
+    --btn-primary-border: theme(colors.black);
+    --btn-primary-text: theme(colors.white);
+
+    --btn-secondary: theme(colors.white);
+    --btn-secondary-text: theme(colors.black);
+
+    --platform-btn: theme(colors.neutral.100);
+
+    --btn-ternary: theme(colors.neutral.100);
+    --btn-ternary-text: theme(colors.black);
+
+    --auxialiar: theme(colors.neutral.100);
+
+    --elipse: url("../assets/Ellipse\ 1.png");
+    --elipse2: url("../assets/Ellipse\ 2.png");
+
+    --hero-img: url("../assets/Hero1.png");
+    --category-img: url("../assets/category.png");
+
+    --layer-gradient: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0.13%,
+      rgba(255, 255, 255, 0.64) 92.08%
+    );
+  }
+
+  .dark {
+    --bg-base: theme(colors.zinc.900);
+    --bg-middle: theme(colors.zinc.800);
+    --bg-top: theme(colors.zinc.900);
+
+    --primary: theme(colors.orange.400);
+    --secondary: theme(colors.violet.600);
+
+    --text-default: theme(colors.neutral.100);
+    --text-inactive: theme(colors.neutral.500);
+
+    --btn-primary: theme(colors.black);
+    --btn-primary-border: theme(colors.neutral.600);
+    --btn-primary-text: theme(colors.white);
+
+    --btn-secondary: theme(colors.neutral.800);
+    --btn-secondary-text: theme(colors.white);
+
+    --platform-btn: rgba(145, 147, 152, 0.2);
+
+    --btn-ternary: theme(colors.white);
+    --btn-ternary-text: theme(colors.neutral.900);
+
+    --auxialiar: theme(colors.zinc.700);
+
+    --elipse: url("../assets/Ellipse\ 2.png");
+    --elipse2: url("../assets/Ellipse\ 1.png");
+    --hero-img: url("../assets/Hero2.png");
+    --category-img: url("../assets/category.png");
+
+    --layer-gradient: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0.13%,
+      rgba(0, 0, 0, 0.64) 92.08%
+    );
+  }
+}
